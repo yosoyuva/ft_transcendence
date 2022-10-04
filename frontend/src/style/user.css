@@ -1,0 +1,160 @@
+.user--page {
+	background-color: var(--background-color);
+	color: #fff;
+	width: 100vw;
+	height: calc(100vh - var(--nav-h));
+	display: flex;
+	padding: 1rem 0 2rem 0;
+}
+
+.user--page--pic--title {
+	text-align: center;
+}
+
+.user--page-title {
+	font-weight: bolder;
+	font-size: 2rem;
+}
+
+.userstats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.parstats {
+	font: inherit;
+	color: white;
+	font-family: inherit;
+	font-size: large;
+	text-align: left;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.input--file {
+	position: absolute;
+	cursor: pointer !important;
+	overflow: hidden;
+	background-color: #222;
+	border: 4px solid var(--main-color);
+	top: 20vw;
+	left: 20vw;
+	width: 3vw;
+	height: 3vw;
+	line-height: 3vw;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.input--file:hover {
+	background-color: #777;
+}
+
+.input--file:hover svg {
+	fill: var(--main-color-hover);
+}
+
+.input--file input[type='file'] {
+	position: absolute;
+	cursor: pointer;
+	transform: scale(2);
+	opacity: 0;
+}
+
+.input--file input[type='file']::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.input--file--icon {
+	position: absolute;
+	top: 0.4vw;
+	left: 0.4vw;
+	width: 1.6vw;
+	height: 1.6vw;
+	fill: var(--main-color);
+}
+
+.btn--username--change {
+	border: unset;
+	background-color: unset;
+	margin-left: 0.5rem;
+}
+
+.btn--username--change svg {
+	fill: #000;
+	width: 1rem;
+	height: 1rem;
+}
+
+.btn--username--change svg:hover {
+	fill: var(--icon-color-hover);
+}
+
+.twofa {
+	position: absolute;
+	left: 0.85rem;
+	top: 0.85rem;
+	height: 2.5rem;
+	border: unset;
+	background-color: unset;
+	padding: -1rem;
+	color: #fff;
+	font-family: var(--alt-font);
+	font-size: 0.7rem;
+	transition: 200ms;
+}
+
+.twofa:hover {
+	color: var(--main-color-hover) !important;
+}
+
+.typewriter {
+	width: 0;
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid transparent;
+	/* The typwriter cursor */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	/*margin: 0 auto;*/
+	/* Gives that scrolling effect as the typing happens */
+	animation: typing 0.5s steps(40, end);
+	animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		border-color: var(--main-color-hover);
+		width: 0;
+	}
+
+	99% {
+		border-color: var(--main-color-hover);
+	}
+
+	to {
+		border-color: transparent;
+		width: 100%;
+	}
+}
+
+.card--match {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	width: 100%;
+	background-color: #00000000;
+	color: #fff;
+	border: 4px solid #ffffff80;
+	margin-bottom: 0.75rem;
+	border-radius: 12px;
+}
+
+.card--match:hover {
+	filter: saturate(4);
+}

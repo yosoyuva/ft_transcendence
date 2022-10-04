@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	/*font-family: System, monospace;
+	margin: 3rem;*/
+	background-color: darkgray;
+}

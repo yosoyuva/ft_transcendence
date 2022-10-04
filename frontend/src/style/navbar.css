@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.nav {
+	background-color: var(--main-color);
+	color: #fff;
+	height: var(--nav-h);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	gap: 2rem;
+}
+
+.nav svg {
+	width: 2.5rem;
+	height: 2.5rem;
+	fill: var(--icon-color);
+}
+
+.nav svg:hover {
+	fill: var(--icon-color-hover);
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+
+.nav--middle {
+	display: absolute;
+	left: 50%;
+	transform: translate(calc(3.5rem + -50%));
+}
+
+.homeBut,
+.playBut,
+.chatBut,
+.profileBut {
+	color: white;
+	text-decoration: none;
+}
+
+.homeBut {
+	background: yellow;
+	color: black;
+}
+
+.profileBut {
+	background: blue;
+}
+
+.playBut:hover,
+.chatBut:hover {
+	background: grey;
+	color: white;
+}
+
+.profileBut:hover {
+	color: red;
+}
+
+.homeBut:hover {
+	color: blue;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		gap: 0.1;
+		font-size: .9rem;
+	}
+}

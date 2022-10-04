@@ -1,0 +1,202 @@
+.pong {
+	height: calc(100vh - var(--nav-h));
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: OCR A Std;
+	/*background-color: #4682B4;*/
+	background-color: var(--background-color);
+	text-align: center;
+}
+
+.pong--compo {
+	height: 100vh;
+}
+
+/*#bandeau {
+	width: 100%;
+	background-size: 100% auto !important;
+	font-size: 300%;
+	margin: 0;
+	line-height: 70px;
+	background: #A9A9A9;
+}*/
+
+#canvas {
+	min-width: 640px;
+	min-height: 480px;
+	max-width: 740px;
+	max-height: 580px;
+}
+
+.btn--back {
+	background-color: unset;
+	border: unset;
+}
+
+.btn--back:hover {
+	filter: brightness(100000%);
+}
+
+/* need to change look of it */
+.pong--btn--play {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 160, 13, 0.533);
+	border: unset;
+	color: white;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	padding: 0.3rem 0.5rem;
+	font-family: var(--alt-font);
+	transition: 300ms;
+}
+
+.pong--btn--home {
+	background-color: rgba(0, 160, 13, 0.533);
+	border: unset;
+	color: white;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	padding: 0.3rem 0.5rem;
+	font-family: var(--alt-font);
+	transition: 300ms;
+	margin-bottom: 10px !important;
+}
+
+.pong--btn--play:hover {
+	color: #fff;
+	background-color: #0006;
+	border-radius: unset;
+}
+
+.pong--btn--home:hover {
+	color: #fff;
+	background-color: #0006;
+	border-radius: unset;
+}
+
+.to-play {
+	font-size: 200%;
+	min-width: 55%;
+	width: auto;
+	padding: 0 1.5rem;
+	background-size: 100% auto !important;
+	text-align: center;
+	border-width: medium;
+	background: #778899;
+	line-height: 60px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#select {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: silver;
+	box-shadow: 0 0 0 4px silver, 1em 1em 3px 0 rgb(0 0 0 / 50%);
+	margin-top: 3rem;
+	padding: 2rem;
+}
+
+#select-css {
+	font-size: 1.5rem;
+	font-family: minitel;
+	color: var(--main-color);
+	text-decoration: underline;
+	font-size: 2rem;
+	color: rgb(66, 66, 66);
+}
+
+#choiceButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.choice2 {
+	height: 60vh;
+	width: 40vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+	padding: 2rem;
+}
+
+#live-game-msg {
+	font-size: 2rem;
+	color: rgb(66, 66, 66);
+}
+
+.choice {
+	width: 40vw;
+	margin: 0;
+}
+
+/* need more var, and maybe even use an already coded btn css */
+.choice button {
+	cursor: pointer;
+	color: white;
+	font-family: var(--alt-font);
+	font-size: 1.25rem;
+	background-color: var(--main-color);
+	text-align: center;
+	text-decoration: none;
+	padding: 0.5rem;
+	box-shadow: 0 0 0 4px var(--main-color), 0.6em 0.6em 3px 0 rgb(0 0 0 / 50%);
+}
+
+.choice button:hover {
+	background: #67c61a;
+	box-shadow: 0 0 0 4px #67c61a, 0.6em 0.6em 3px 0 rgb(0 0 0 / 50%);
+}
+
+.pong--player {
+	text-align: center;
+	font-size: 30px;
+	font-family: var(--alt-font);
+}
+
+#score {
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.match--text {
+	font-family: var(--alt-font);
+	text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+	.menu {
+		width: 100% !important;
+	}
+
+	#select {
+		width: 220px;
+	}
+
+	#select-css {
+		font-size: 1rem !important;
+	}
+
+	#choiceButton button {
+		font-size: 1rem;
+	}
+
+	#live-game-msg {
+		font-size: 1rem;
+	}
+
+}

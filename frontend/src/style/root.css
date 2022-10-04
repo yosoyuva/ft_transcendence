@@ -1,0 +1,85 @@
+@font-face {
+	src: url(font/Minitel.ttf);
+	font-family: minitel;
+}
+
+@font-face {
+	src: url(font/Nunito/Nunito-VariableFont_wght.ttf);
+	/*font-variation-settings: 'wght' 375, 'GRAD' 88;*/
+	font-family: nunito;
+}
+
+@font-face {
+	src: url(font/Ubuntu/Ubuntu-Regular.ttf);
+	font-family: ubuntu;
+}
+
+:root {
+	--main-font: nunito;
+	--alt-font: minitel;
+	--🔥-font: ubuntu;
+	--main-color: #51a30d;
+	--main-color-hover: greenyellow;
+	--alt-color: green;
+	--alt-color-hover: var(--main-color);
+	--icon-color: #ffffff;
+	--icon-color-hover: greenyellow;
+	--color-number: #7070ff;
+	--background-color: #96c471;
+	--nav-h: 4rem;
+	background-color: var(--background-color);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--main-font);
+	background-color: var(--background-color);
+}
+
+.back {
+	height: calc(100vh - var(--nav-h));
+	width: 100%;
+	text-align: center;
+	background-color: var(--background-color);
+}
+
+.ontop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*div {
+	background-color: var(--background-color);
+}*/
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+	background: #fff0;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+	background: var(--alt-color);
+	border-radius: 8px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--alt-color-hover);
+}
